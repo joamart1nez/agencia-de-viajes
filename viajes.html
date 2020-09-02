@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="viajes.css">
+    <title>Agencia de Viajes</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="cyan lighten-1 fixed">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo"><i class="material-icons"
+                        style="font-size: 3.5rem; margin:0;">flight_land</i>Turismo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#search">Buscar</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#galery">Galeria</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav cyan lighten-1" id="mobile-demo">
+        <li><a class="white-text" href="#home">Inicio</a></li>
+        <li><a class="white-text" href="#search">Buscar</a></li>
+        <li><a class="white-text" href="#destinos">Destinos</a></li>
+        <li><a class="white-text" href="#galery">Galeria</a></li>
+        <li><a class="white-text" href="#contact">Contacto</a></li>
+    </ul>
+
+    <div class="slider scrollspy" id="home">
+        <ul class="slides">
+            <li>
+                <img src="viajes/viajes.jpg" alt="" style="filter: brightness(70%);">
+                <div class="caption rigth-align">
+                    <h2 style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Servicios de calidad</h2>
+                    <h5 class="light grey-text text-lighten-3" style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Lorem,
+                        ipsum dolor sit amet consectetur adipisicing elit. Vel quas porro eveniet soluta, perferendis
+                        veritatis.</h5>
+                    <a class="waves-effect waves-light btn-small" href="#">Leer más</a>
+                </div>
+            </li>
+            <li>
+                <img src="viajes/viajes2.jpg" alt="" style="filter: brightness(70%);">
+                <div class="caption center-align">
+                    <h2 style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Los mejores destinos turísticos</h2>
+                    <h5 class="light grey-text text-lighten-3" style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus maxime recusandae?</h5>
+                    <a class="waves-effect waves-light btn-small" href="#">Leer más</a>
+                </div>
+            </li>
+            <li>
+                <img src="viajes/viajes3.jpg" alt="" style="filter: brightness(70%);">
+                <div class="caption left-align">
+                    <h2 style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Atención las 24hs</h2>
+                    <h5 class="light grey-text text-lighten-3" style="text-shadow: 2px 2px 5px rgb(68, 68, 68);">Lorem
+                        ipsum dolor, sit amet consectetur adipisicing elit. Dicta magni aliquam, beatae illum facilis
+                        ullam at! Reiciendis, mollitia!</h5>
+                    <a class="waves-effect waves-light btn-small" href="#">Leer más</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="section cyan darken-1 z-depth-3">
+        <div class="container">
+            <h3 class="center-align white-text" style="text-shadow: 3px 2px 5px rgb(68, 68, 68);">Encuentra el destino
+                al que quieres viajar</h3>
+            <div class="input-field" id="search">
+                <input type="text" id="search" class="white autocomplete col s8 autocomplete scrollspy"
+                    placeholder="Bahamas, Panamá, Camboriú, Río de Janeiro..." id="autocomplete-input">
+            </div>
+        </div>
+    </section>
+    <section class="section teal lighten-5 z-depth-5">
+        <div class="center-align container">
+            <h2>Nuestros destinos</h2>
+        </div>
+
+        <div class="row scrollspy" id="destinos">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes2.jpg" class="materialboxed">
+                        <span class="card-title">Camboriú</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Santa Catarina, Brasil</li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes3.jpg" class="materialboxed" style="height: 202px;">
+                        <span class="card-title">Aruba</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Reino de los Paises Bajos</li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes4.jpg" class="materialboxed">
+                        <span class="card-title">Panamá</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Rep de Panamá</li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes5.jpg" class="materialboxed">
+                        <span class="card-title">Las Bahamas</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Las Bahamas/li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes7.jpg" class="materialboxed" style="height: 285px;">
+                        <span class="card-title">Honolulu</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Honolulu, Hawaii</li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="viajes/viajes6.jpg" class="materialboxed">
+                        <span class="card-title">Río de Janeiro</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons red-text"
+                                            style="font-size: 2.5rem;">place</i>Río de Janeiro, Brasil</li>
+                                    <li class="valign-wrapper"><i class="small material-icons blue-grey-text"
+                                            style="font-size: 2.5rem;">local_dining</i>Comidas incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="col s6 m6">
+                                <ul>
+                                    <li class="valign-wrapper"><i class="small material-icons indigo-text text-darken-4"
+                                            style="font-size: 2.5rem;">location_city</i>6 días y 7 noches</li>
+                                    <li class="valign-wrapper"><i
+                                            class="small material-icons teal-text text-teal-darken-4"
+                                            style="font-size: 2.5rem;">directions_walk</i>Excursiones y paseos</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 center-align">
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                                <i class="material-icons yellow-text">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="viajes/viajes8.jpg"></div>
+    </div>
+    <section class="section cyan lighten-5 z-depth-5">
+        <div class="center-align container scrollspy" id="galery">
+            <h2 class="center-align" style="text-shadow: 2px 2px 5px rgba(83, 83, 83, 0.685);">Galeria</h2>
+        </div>
+        <div class="row">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes5.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes3.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes7.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes4.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes2.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes8.jpg"
+                style="height: 150px; margin-top:15px">
+            <img class="materialboxed col m3 s6" width="650" src="viajes/viajes6.jpg"
+                style="height: 150px; margin-top:15px">
+        </div>
+    </section>
+    <section class="cyan darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align ">
+                    <h4 class="white-text" style="text-shadow: 3px 2px 5px rgb(68, 68, 68);">Siguenos en las redes</h4>
+                    <p class="center-align white-text">Para estar al tanto de todas nuestras promociones</p>
+                    <div class="row">
+                        <a href="#" class="white-text col s3 waves-effect waves-light">
+                            <i class="fa fa-facebook-official fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text col s3 waves-effect waves-light">
+                            <i class="fa fa-instagram fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text col s3 waves-effect waves-light">
+                            <i class="fa fa-twitter fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text col s3 waves-effect waves-light">
+                            <i class="fa fa-google fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="">
+        <h1 class="center-align">Contacto</h1>
+        <div class="row">
+            <div class="col s12 m6 l4 push-l1">
+                <div class="row">
+                    <div class="col s12 center-align cyan darken-2 white-text">
+                        <br>
+                        <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                        <h5>Contactanos para mas información</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit vitae inventore?
+                            Incidunt dignissimos quidem excepturi qui, repudiandae deleniti ex?</p><br>
+                    </div>
+                    <ul class="collection col s12">
+                        <li class="collection-item">
+                            <h5>Nos encuentran en</h5>
+                        </li>
+                        <li class="collection-item"><strong>Turismo Travels</strong></li>
+                        <li class="collection-item"><strong>Rivadavia 2091</strong></li>
+                        <li class="collection-item">Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <form class="col s12 m6 l5 blue-grey lighten-5 push-l2 scrollspy" id="contact">
+                <div class="row">
+                    <h5 class="center-align">Por favor completa el formulario</h5><br>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div><br>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email" type="email" class="validate">
+                        <label for="icon_email">Correo eléctronico</label>
+                    </div><br>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">envelope</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensaje</label>
+                    </div>
+                    <div class="container center-align">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                            <i class="material-icons right">send</i>
+                          </button><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, { indicators: false });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.autocomplete');
+        var instances = M.Autocomplete.init(elems, {
+            data: {
+                'Aruba': null,
+                'Bahamas': null,
+                'Camboriú': null,
+                'Panamá': null,
+                'Rio de Janeiro': null,
+                'Cancún': null,
+                'California': null,
+                'Florida': null,
+                'Hawaii': null,
+                'Islas Galapagos': null,
+                'Fiji': null,
+                'Nueva Zelanda': null
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+</html>

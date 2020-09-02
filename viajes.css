@@ -1,0 +1,13 @@
+
+.section #search{
+    padding:0 10px !important
+}
+
+.parallax-container{
+    height: 450px;
+}
+.card .card-image img{
+    filter: brightness(70%);
+}
+
+
